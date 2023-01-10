@@ -1,0 +1,27 @@
+Given height of a tree, classify into small/big
+if height is less than 6 feet print 0 , if less than 100 print 1 and if more than 200 print 2
+
+import java.util.*;
+class Main{
+	
+	public static int checkHeight(int a){
+		
+		if(a<=6){
+			return 0;
+		}
+		else if(a<=100){
+			return 1;
+		}
+		return 2;
+	} 
+	
+	
+	
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		int ans = checkHeight(N);
+		System.out.println(ans);
+		
+	}
+}
